@@ -1,4 +1,4 @@
-# CRUD de Usuários com Node.js
+# CRUD de Filmes com Node.js
 
 Projeto simples usando Node.js, Express e Mongoose.
 
@@ -7,40 +7,10 @@ Projeto simples usando Node.js, Express e Mongoose.
 ```text
 src/
 ├── controllers/
-│   └── userController.js
+│   └── filmeController.js
 ├── models/
-│   └── User.js
+│   └── Filme.js
 ├── routes/
-│   └── userRoutes.js
+│   └── filmeRoutes.js
 └── server.js
-```
-
-## Executar
-
-```bash
-npm install
-cp .env.example .env
-npm run dev
-```
-
-É necessário ter o MongoDB rodando localmente.
-
-## Rotas
-
-| Método | Rota | Ação |
-|---|---|---|
-| GET | /usuarios | Lista usuários |
-| GET | /usuarios/:id | Busca um usuário |
-| POST | /usuarios | Cria um usuário |
-| PUT | /usuarios/:id | Atualiza um usuário |
-| DELETE | /usuarios/:id | Exclui um usuário |
-
-## Exemplo de JSON
-
-```json
-{
-  "nome": "João Silva",
-  "email": "joao@email.com",
-  "idade": 25
-}
 ```
